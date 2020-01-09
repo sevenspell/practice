@@ -5,19 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/c140bf22f6.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!--my CSS-->
     <link rel="stylesheet" href="./assets/style.css">
 
-    <title>Document</title>
+    <title>Rp's Weather API</title>
+
 </head>
 
 <body>
     <section class="content">
-        <div class="testHeader">Color</div>
+        <header class="header">Weather Dashboard</header>
+
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <div class="container">
+                <div class="search-container">
+                    <form>
+                        <b>Search for a city:</b>
+                        <input class="input" id="citySearch" type="text" placeholder="Search City" name="search">
+                        <button type="button" id="citySearchButton"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="list-group hide" id="cityDisplayHead">
+                </div>
+            </div>
+        </div>
+
+        <!-- Page content -->
+        <div class="main">
+            <div class="container currentWeatherContainer">
+                <div class="panel panel-default">
+                    <div class="panel-body cityWeather">
+                    </div>
+                </div>
+            </div>
+            <div class="container forecastContainer">
+                <div class="row hide forecastSection">
+                    <div class="col-sm-12 weatherFHeader">
+                        <h5 id="forecastHeader">5-Day Forecast:</h5>
+                    </div>
+                    <br>
+                    <div class="col-sm-2 weatherForecast" id="forecast1">
+                    </div>
+                    <div class="col-sm-2 weatherForecast" id="forecast2">
+                    </div>
+                    <div class="col-sm-2 weatherForecast" id="forecast3">
+                    </div>
+                    <div class="col-sm-2 weatherForecast" id="forecast4">
+                    </div>
+                    <div class="col-sm-2 weatherForecast" id="forecast5">
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
