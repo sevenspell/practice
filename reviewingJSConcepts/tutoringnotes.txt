@@ -1,0 +1,23 @@
+###########################
+//Search button logic
+1. Event click search button 
+2. Get the name of the city inside the text box
+3. Build the URL
+4. Make the API Call
+5. Put the content in the interface
+###########################
+//City button logic
+1. Event click city button 
+2. Get the name of the city as data-city
+3. Build the URL
+4. Make the API Call
+5. Put the content in the interface
+
+
+//Search button logic
+1. Event click search button 
+2. Get the name of the city inside the text box
+3. Build the URL (Function which receives the name of the city and build and returns the URL)
+4. Make the API Call (Function which receives the URL, makes the API call and returns the result)
+5. Put the content in the interface (Function which receives the content from the function of the step 4 and put the content in the interface)
+
